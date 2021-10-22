@@ -6,10 +6,10 @@ This build adds fftw system libraries and python module.  It also adds the tifff
 To build: In a terminal cd to the directory containing the Dockerfile and type:
 
 ```
-lab@lab-desktop:~/Jetson-ML$ sudo docker build -t ml-cont
+lab@lab-desktop:~/Jetson-ML$ sudo docker build -t ml-cont .
 ```
 
-To run the container type:
+Note, don't forget the "." at the end of the command. To run the container type:
 
 ```
 lab@lab-desktop:~/Jetson-ML$ sudo docker run -td --rm --runtime nvidia --network host ml-cont
